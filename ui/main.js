@@ -1,16 +1,15 @@
-console.log('Loaded!');
-// change the text of the main text div
-var element=document.getElementById('main text'
-);
+//counter code
+var button=document.getElementById('counter');
 
-element.innerHTML='New value';
+var counter=0;
 
-var img=document.getElementById('modi');
-var marginLeft=0;
-function moveRight(){
-    marginLeft=marginLeft+10;
-    img.style.marginLeft=marginLeft + 'px';
-}
-img.oneClick=function(){
-    var interval=setInterval(moveRight,1);
+button.oneClick=function(){
+    // MAke a request to the counter
+    
+    //Capture the variable
+    
+    //Render the variable
+    counter=counter+1;
+    var span=document.getElementById('count');
+    span.innerHTML=counter.toString();
 };
